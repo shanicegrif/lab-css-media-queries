@@ -163,3 +163,44 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .splash {
+    display: none;
+  }
+  
+  header {
+    grid-template-columns: 125px 1fr;
+  }
+
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px 0px;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  footer h4 {
+    border-bottom: none;
+  }
+}
